@@ -10,7 +10,7 @@ export const getWeatherData = async (location) => {
     }
 
     const res = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`,
+        `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&aqi=no`,
     );
     return res.json();
 }
